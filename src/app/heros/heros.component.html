@@ -1,0 +1,17 @@
+<h2>基本資訊 - {{ hero.name | uppercase }}</h2>
+<div>
+  <span>Id: {{ hero.id }}</span>
+</div>
+<div>
+  <span>Name: {{ hero.name }}</span>
+</div>
+
+<input type="text" [(ngModel)]="hero.name" placeholder="請輸入英雄名稱" />
+
+<h2>My Waifu</h2>
+<ul>
+  <li *ngFor="let waifu of waifus">
+    <span class="badge">{{ waifu.id }}</span>
+    {{ waifu.name }}
+  </li>
+</ul>
