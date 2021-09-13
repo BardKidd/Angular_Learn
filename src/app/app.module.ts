@@ -4,9 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HerosComponent } from './heros/heros.component';
+import { FateComponent } from './fate/fate.component';
 
 @NgModule({
-  declarations: [AppComponent, HerosComponent],
+  declarations: [AppComponent, HerosComponent, FateComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
